@@ -1,0 +1,42 @@
+h1 {
+	text-align: center;
+}
+ 
+img {
+	margin-left: 150pt;
+}
+
+body{
+	background-color: #E8B92D;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 14px;
+	line-height: 1.42857143;
+	color: #333;
+}
+
+#eatMe {
+	float: left;
+	margin-left: 100pt;
+}
+
+#eaten {
+	float: right;
+	margin-right: 100pt;
+}
+
+.addBurger {
+	padding-top: 100pt;
+	text-align: center;
+	margin: auto;
+	font-size: 12pt;
+}
+
+#grump {
+	text-align: center;
+}
+
+#subBur {
+	font-size: 12pt;
+	border-radius: 7pt;
+}
+

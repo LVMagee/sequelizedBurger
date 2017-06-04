@@ -1,0 +1,30 @@
+{
+  "name": "eat-da-burger",
+  "version": "1.0.0",
+  "description": "design your own burger",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LVMagee/Burger.git"
+  },
+  "keywords": [
+    "bugers"
+  ],
+  "author": "lvmagee",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LVMagee/Burger/issues"
+  },
+  "homepage": "https://github.com/LVMagee/Burger#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "express-handlebars": "^3.0.0",
+    "method-override": "^2.3.9",
+    "mysql": "^2.13.0"
+  }
+}
