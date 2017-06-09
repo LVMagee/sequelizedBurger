@@ -1,2 +1,3 @@
-# sequelizedBurger
-Taking an ORM Eat Da Burger to a sequelized Burger App.
+# Eat Da Burger
+
+Sequelized version of the burger app.
