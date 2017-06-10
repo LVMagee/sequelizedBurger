@@ -11,7 +11,7 @@ router.get("/", function(req, res) {
 router.get("/burgers", function(req, res) {
     db.Burger.findAll({
         order: [
-            ["burger_name", "ASC"]
+        ["burger_name", "ASC"]
         ],
         include: [{
             model: db.Customer,
@@ -53,15 +53,18 @@ router.put("/burgers/update/devour/:id", function(req, res) {
 
 router.put("/burgers/update/return/:id", function(req, res) {
     return db.Burger.update({
-        devoured: req.body.devoured
+        devoured: req.body.devoured,
+        CustomerId: newCustomer.id
     }, {
         where: {
             id: req.params.id
-        }
-    }).then(function() {
-        res.redirect("/burgers");
+        },
+        include: [db.Customer]
     });
+    }).then(function() {
+    res.redirect("/burgers");
 });
+};
 
 router.delete("/burgers/delete/:id", function(req, res) {
     return db.Burger.destroy({
