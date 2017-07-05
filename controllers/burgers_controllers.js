@@ -60,11 +60,10 @@ router.put("/burgers/update/return/:id", function(req, res) {
             id: req.params.id
         },
         include: [db.Customer]
-    });
     }).then(function() {
-    res.redirect("/burgers");
+        res.redirect("/burgers");
+    });
 });
-};
 
 router.delete("/burgers/delete/:id", function(req, res) {
     return db.Burger.destroy({
